@@ -12,6 +12,8 @@ function fuzzyMatch(arr, st){
   })
 }
 
-matchName = () => {
-  
+matchName = (arr, name) => {
+  return arr.filter(e =>{
+    return e.name == name 
+  })
 }
