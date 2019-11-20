@@ -12,7 +12,7 @@ function fuzzyMatch(arr, st){
   })
 }
 
-matchName = (arr, name) => {
+matchName(arr, name){
   return arr.filter(e =>{
     return e.name == name 
   })
