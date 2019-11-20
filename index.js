@@ -7,7 +7,7 @@ findMatching = (arr, name) => {
 
 function fuzzyMatch(arr, st){
   return arr.filter(e=>{
-    a = e.toLowerCase()
+   con= e.toLowerCase()
     return e.includes(st.toLowerCase())
   })
 }
