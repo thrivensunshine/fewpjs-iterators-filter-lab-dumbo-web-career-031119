@@ -12,7 +12,8 @@ function fuzzyMatch(arr, st){
   })
 }
 
- atchName(arr, name){
+
+function matchName(arr, name){
   return arr.filter(e =>{
     return e.name == name 
   })
