@@ -7,11 +7,10 @@ findMatching = (arr, name) => {
 
 function fuzzyMatch(arr, st){
   return arr.filter(e=>{
-   con= e.toLowerCase()
-    return e.includes(st.toLowerCase())
+   const a = e.toLowerCase()
+    return a.includes(st.toLowerCase())
   })
 }
-
 
 
 matchName = () => {
