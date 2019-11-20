@@ -7,13 +7,14 @@ findMatching = (arr, name) => {
 
 function fuzzyMatch(arr, st){
   return arr.filter(e=>{
-    a = e.toLowerCase()
-    return e.includes(st.toLowerCase())
+   const a = e.toLowerCase()
+    return a.startsWith(st.toLowerCase())
   })
 }
 
 
-
-matchName = () => {
-  
+function matchName(arr, name){
+  return arr.filter(e =>{
+    return e.name == name 
+  })
 }
