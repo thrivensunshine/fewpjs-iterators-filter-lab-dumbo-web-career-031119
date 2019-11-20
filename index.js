@@ -8,10 +8,9 @@ findMatching = (arr, name) => {
 function fuzzyMatch(arr, st){
   return arr.filter(e=>{
    const a = e.toLowerCase()
-    return a.includes(st.toLowerCase())
+    return a.startsWith(st.toLowerCase())
   })
 }
-
 
 matchName = () => {
   
